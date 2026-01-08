@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: reviewapp
-        image: innovativeacademy/reviewapp:latest
+        image: innovativeacademy/reviewapp:7681601
         ports:
         - containerPort: 8080
