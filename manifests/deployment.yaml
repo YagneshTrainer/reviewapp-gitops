@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reviewapp
+  labels:
+    app: reviewapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: reviewapp
+  template:
+    metadata:
+      labels:
+        app: reviewapp
+    spec:
+      containers:
+      - name: reviewapp
+        image: innovativeacademy/frontend:V1
+        ports:
+        - containerPort: 8080
